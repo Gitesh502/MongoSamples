@@ -3,10 +3,34 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<div class="col-lg-12">
-    <div class="row">
-        <input type="text" id="txtFirstName" name="txtFirstName"  placeholder="First Name"/>
+<section>
+    <div class="row"><label>Add Employee</label></div>
+    <div class="row">&nbsp;</div>
+    <div class="col-lg-12">
+        <div class="col-lg-6">
+            <div class="row">
+                <input type="text" id="txtFirstName" name="txtFirstName" placeholder="First Name" class="form-control" />
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <input type="text" id="txtLastName" name="txtLastName" placeholder="Last Name" class="form-control" />
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <select class="form-control" id="jobRole">
+                    <option>--Select Role--</option>
+                    <option value="Developer">Developer</option>
+                    <option value="QA">QA</option>
+                    <option value="Network Admin">Network Admin</option>
+                    <option value="DB Admin">DB Admin</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+               <button class="btn btn-primary">Add Email </button>
+            </div>
+        </div>
     </div>
-</div>
+</section>
